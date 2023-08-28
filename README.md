@@ -37,7 +37,7 @@ In this file, directory paths are written with a forward slash as on MacOS, Linu
 
 1. When using Git locally, what are these?  Define each one in a sentence
    * Staging area - Preparing before commit changes in the file.
-   * Working copy -A clone in git command (git clone) allow user clone and work on repo.
+   * Working copy -Current project's file that you are actively editing.
    * master - The name of the default branch in git terminology.
    * HEAD - Refer to the currently checked-out branch's latest commit.
 
@@ -77,7 +77,8 @@ test/
 
 2. Add `test/test_a.py` to the staging area (but not any other files).
    ```
-   git add README.md src/
+   git add test/test_a.py
+
    ```
 
 3. List the names of files in the staging area.
@@ -221,7 +222,8 @@ git branch -a
 ```
 **Create new branch and switch to it**
 ```
-git merge feature
+git checkout -b new-branch-name
+
 ```
 **Delete a Merged Branch**
 ```
